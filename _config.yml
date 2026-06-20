@@ -1,0 +1,23 @@
+title: Anthropic Bug Bounty Guide
+description: Community guide for Anthropic's HackerOne bug bounty program — from beginner basics to advanced methodology, CVSS scoring, and AI-assisted security testing
+theme: jekyll-theme-cayman
+
+url: "https://techdeveloper-org.github.io"
+baseurl: "/anthropic-bug-bounty-guide"
+
+show_downloads: false
+google_analytics:
+
+# Navigation
+header_pages:
+  - docs/what-is-bug-bounty.md
+  - docs/hackerone-standards.md
+  - docs/anthropic-program.md
+  - docs/severity-rating.md
+
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
