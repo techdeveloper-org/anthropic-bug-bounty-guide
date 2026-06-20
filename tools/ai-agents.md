@@ -184,22 +184,53 @@ cd ~/claude-global-library
 
 ---
 
-## Important Notes on Agent Usage
+## ⚠️ Critical Warning — AI Reports Will Be REJECTED
 
-### Scope
-- Agents help with **analysis and methodology** — they don't automatically hack targets
-- You still need to manually test, reproduce, and verify findings
-- Agents assist with: threat modeling, vulnerability pattern identification, CVSS scoring, report writing
+Anthropic's official program rules state:
 
-### Legal
+> *"False-positive and/or theoretical reports from automated scanners **or written by AI** will be closed as 'Not Applicable' at Anthropic's discretion."*
+
+### What This Means
+
+| Use Case | Allowed? |
+|----------|---------|
+| Use AI agents for private research & analysis | ✅ YES |
+| Use AI agents to understand attack surface | ✅ YES |
+| Use AI agents to calculate CVSS scores | ✅ YES |
+| Use AI agents to learn methodology | ✅ YES |
+| Let AI write your final HackerOne report | ❌ NO — REJECTED |
+| Submit unvalidated AI-generated findings | ❌ NO — REJECTED |
+| Submit theoretical findings without PoC | ❌ NO — REJECTED |
+
+### The Right Way to Use AI Agents
+
+```
+AI Agent Role:          Research assistant (private)
+Your Role:              Validator + Reporter
+
+Step 1: AI agent → suggests attack surface / vulnerability patterns
+Step 2: YOU → manually test and reproduce the finding
+Step 3: YOU → confirm the bug exists with your own PoC
+Step 4: YOU → write the report in your own words
+Step 5: Submit → working PoC attached, your words, your validation
+```
+
+### Important Notes on Agent Usage
+
+**Research (OK):**
+- Agents help with analysis and methodology — they don't automatically hack targets
+- You still need to manually test, reproduce, and verify every finding
+- Agents assist with: threat modeling, pattern identification, CVSS scoring
+
+**Legal:**
 - Always test only within the authorized scope of the HackerOne program
-- Agents don't bypass this requirement — they're research tools
-- You're responsible for all testing activities
+- You are responsible for all testing activities
+- Use `X-HackerOne-Handle: your-handle` header in every request
 
-### Quality
-- Agent outputs are starting points, not final reports
+**Quality:**
+- Agent outputs are starting points for YOUR research — not final reports
 - Verify every finding manually before submitting
-- HackerOne requires proof-of-concept — agents can help draft it, you must verify it
+- Working PoC is mandatory — no theoretical findings accepted
 
 ---
 

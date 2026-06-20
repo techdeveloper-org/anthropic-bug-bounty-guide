@@ -39,14 +39,15 @@ This guide explains:
 | Document | What You'll Learn |
 |----------|-------------------|
 | [docs/what-is-bug-bounty.md](docs/what-is-bug-bounty.md) | Bug bounty basics, legal authorization, rewards |
+| [docs/program-rules.md](docs/program-rules.md) | ⭐ Official Anthropic program rules, out-of-scope, contact |
 | [docs/hackerone-standards.md](docs/hackerone-standards.md) | HackerOne platform standards (IDOR, severity, etc.) |
-| [docs/anthropic-program.md](docs/anthropic-program.md) | Anthropic's specific scope, targets, out-of-scope |
+| [docs/anthropic-program.md](docs/anthropic-program.md) | Anthropic scope, two tracks, rewards, setup guide |
 | [docs/severity-rating.md](docs/severity-rating.md) | How to rate severity (CVSS v4.0, HackerOne standards) |
 | [methodology/recon.md](methodology/recon.md) | Reconnaissance — gathering target info |
 | [methodology/api-testing.md](methodology/api-testing.md) | API security testing methodology |
 | [methodology/auth-testing.md](methodology/auth-testing.md) | Authentication & authorization testing |
 | [methodology/report-writing.md](methodology/report-writing.md) | How to write a good HackerOne report |
-| [tools/ai-agents.md](tools/ai-agents.md) | Using AI security agents to assist research |
+| [tools/ai-agents.md](tools/ai-agents.md) | Using AI agents for research (+ AI report warning) |
 | [examples/](examples/) | Real report examples (redacted) |
 
 ---
